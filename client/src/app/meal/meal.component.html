@@ -1,0 +1,74 @@
+<h2>Your Prefered Selection (Lasagna w/ Pesto & with the most ingredients</h2>
+<div>
+	<table>
+		<tr>
+			<th>
+				Entree Name:
+			</th>
+			<th>
+				Entree URL:
+			</th>
+			<th>
+				Entree Ingredients:
+			</th>
+			<th>
+				Entree Amount of Ingredients:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				{{theDish.title}}
+			</td>
+			<td>
+				<a href="{{theDish.href}}">{{theDish.href}}</a>
+			</td>
+			<td>
+				{{theDish.ingredients}}
+			</td>
+			<td>
+				{{theDish.ingredients.length}}
+			</td>
+		</tr>
+	</table>
+</div>
+<div>
+	<p>
+		This is my query <a href="http://www.recipepuppy.com/api/?i=pesto,lasagna&q=lasagna">http://www.recipepuppy.com/api/?i=pesto,lasagna&q=lasagna</a>
+	</p>
+</div>
+<!-- Gatta have a table for you to eat on -->
+<div>
+	<h2>Menu</h2>
+	<h3>Only Lasagnas w/ Pesto</h3>
+	<table>
+		<tr>
+			<th>
+				Entree Name:
+			</th>
+			<th>
+				Entree URL:
+			</th>
+			<th>
+				Entree Ingredients:
+			</th>
+			<th>
+				Entree Amount of Ingredients:
+			</th>
+		</tr>
+		<!-- Looping through our variable entreeslist(array data)-->
+		<tr *ngFor="let i of entreeslist">
+			<td>
+				{{i.title}}
+			</td>
+			<td>
+				<a href="{{i.href}}">{{i.href}}</a>
+			</td>
+			<td>
+				{{i.ingredients}}
+			</td>
+			<td>
+				{{i.ingredients.length}}
+			</td>
+		</tr>
+	</table>
+</div>

@@ -1,0 +1,20 @@
+div{
+	text-align: center;
+}
+
+table{
+	display: block;
+	width: 100%;
+	text-align: center;
+	border: 2px double black;
+}
+td{
+	width: 25%;
+	padding: 10px;
+}
+
+th{
+	width: 25%;
+	border: 2px solid black;
+}
+
